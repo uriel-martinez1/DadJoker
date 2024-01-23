@@ -1,12 +1,35 @@
-# Final Capstone
+# joke-app
 
-This directory contains all of the starter projects for the final capstone. The Vue starter project works with both the Java and .NET backend projects with a single configuration update that you can read about in the README.
+This template should help get you started developing with Vue 3 in Vite.
 
-Each project contains instructions that provides information about the starting code and explains how to get started with the final capstone project.
+## Recommended IDE Setup
 
-1. Click "Use this template" > "Create a new repository".
-2. Leave "Include all branches" unckecked.
-3. Give your repo a sensible name and description.
-4. Click "Create repository".
-5. Finally, clone the repository to your local machine.
-Happy coding!
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
