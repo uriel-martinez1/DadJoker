@@ -1,29 +1,32 @@
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
+      <iframe src="https://giphy.com/embed/U8GLl0bUYFLZVquOfY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
     <div class="wrapper">
-      <HelloWorld v-bind:msg="message" />
+      <AppHeader v-bind:msg="message" />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <JokeResult />
+    <!--Refresh the page-->
+    <button type="button" onclick="document.location.reload()">New Joke</button>
   </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import AppHeader from './components/AppHeader.vue';
+import JokeResult from './components/JokeResult.vue';
 
 export default {
   components: {
-    HelloWorld,
-    TheWelcome
-  },
+    AppHeader,
+    JokeResult
+},
   data() {
     return {
-      message: 'Hello there!'
+      message: 'Dad Joke Generator'
     }
   },
 }

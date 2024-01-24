@@ -1,4 +1,5 @@
 <template>
+  <!--This is where the joke is extracted in and shown on page-->
   <div>
     <h1>{{ joke }}</h1>
   </div>
@@ -13,6 +14,7 @@
         joke: ''
       }
     },
+    // This is where we are parsing the JSON
     created() {
       jokeService.getRandomJoke()
       .then((response) => {
