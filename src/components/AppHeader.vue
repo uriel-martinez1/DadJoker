@@ -1,17 +1,14 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="">
-        <img src="https://api.dicebear.com/7.x/fun-emoji/svg" width="112" height="28">
-      </a>
-
-      
-
+    <div class="logo">
+      <!--Logo goes here-->
     </div>
-    <div class="greetings navbar-item">
-      <h1 class="green">{{ msg }}</h1>
+
+    <div>
+      <h1>{{ msg }}</h1>
+      <h2>Where dad jokes come alive!</h2>
+      <p>Click button to see a new dad joke.</p>
     </div>
-  </nav>
+  
 </template>
 
 <script setup>
@@ -29,10 +26,6 @@ h1 {
   font-size: 2.6rem;
   position: relative;
   top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
 }
 
 .greetings h1,

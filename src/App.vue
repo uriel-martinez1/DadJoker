@@ -1,8 +1,5 @@
 <template>
   <header>
-    <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-      <iframe src="https://giphy.com/embed/U8GLl0bUYFLZVquOfY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    </div>
     <div class="wrapper">
       <AppHeader v-bind:msg="message" />
     </div>
@@ -13,6 +10,8 @@
     <!--Refresh the page-->
     <button type="button" onclick="document.location.reload()">New Joke</button>
   </main>
+
+  
 </template>
 
 <script>
@@ -59,5 +58,6 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+
 }
 </style>
